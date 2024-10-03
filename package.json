@@ -3,24 +3,79 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "prepare": "husky install",
     "start": "next start",
-    "lint": "next lint"
+    "storybook": "storybook dev -p 6002"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.tsx": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.14"
+    "@hookform/resolvers": "3.9.0",
+    "@next/third-parties": "14.2.7",
+    "@radix-ui/react-accordion": "1.2.0",
+    "@radix-ui/react-label": "2.1.0",
+    "@radix-ui/react-select": "2.1.1",
+    "@radix-ui/react-slot": "1.1.0",
+    "@types/lodash": "4.17.7",
+    "class-variance-authority": "0.7.0",
+    "lodash": "4.17.21",
+    "lucide-react": "0.447.0",
+    "next": "14.2.11",
+    "react": "18",
+    "react-dom": "18",
+    "react-hook-form": "7.53.0",
+    "swiper": "11.1.14",
+    "zod": "3.23.8"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.14"
+    "@eslint/eslintrc": "3.1.0",
+    "@storybook/addon-essentials": "8.2.8",
+    "@storybook/addon-interactions": "8.2.8",
+    "@storybook/addon-links": "8.2.8",
+    "@storybook/addon-onboarding": "8.2.8",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/blocks": "8.2.8",
+    "@storybook/nextjs": "8.2.8",
+    "@storybook/react": "8.2.8",
+    "@storybook/testing-library": "0.2.2",
+    "@types/node": "20",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "@typescript-eslint/eslint-plugin": "8.6.0",
+    "@typescript-eslint/parser": "8.6.0",
+    "clsx": "2.1.1",
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.11",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-etc": "2.0.3",
+    "eslint-plugin-import": "2.30.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-react": "7.36.1",
+    "eslint-plugin-tailwindcss": "3.17.4",
+    "husky": "9.1.6",
+    "postcss": "8",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.6",
+    "storybook": "8.3.4",
+    "tailwind-merge": "2.5.2",
+    "tailwindcss": "3.4.1",
+    "tailwindcss-animate": "1.0.7",
+    "typescript": "5.6.2"
   }
 }
