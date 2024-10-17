@@ -11,5 +11,5 @@ export const GuestLayout: FC<GuestLayoutProps> = (props) => {
   const {
     config: { isDark },
   } = useContext(settingThemeContext);
-  return <body className={cn(isDark ? 'dark' : 'light')}>{props.children}</body>;
+  return <body className={cn(isDark ? 'dark' : '')}>{props.children}</body>;
 };
