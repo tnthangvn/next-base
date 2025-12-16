@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config = {
   content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}'],
@@ -14,6 +14,6 @@ const config = {
     },
   },
   plugins: [],
-};
+}
 
-export default config;
+export default config

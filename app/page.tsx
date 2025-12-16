@@ -1,10 +1,10 @@
-import Demo from "@/components/Demo";
+import Demo from '@/components/demo'
 
 export default function Home() {
   return (
-    <div className="text-3xl bg-bluuuu font-sans">
+    <div className="bg-bluuuu font-sans text-3xl">
       Hello word
       <Demo />
     </div>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import type { Config } from 'tailwindcss';
-import defaultTheme from 'tailwindcss/defaultTheme';
+import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
-  content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}'],
+  content: ['../components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}'],
   theme: {
     fontFamily: {
       sans: ['Arial', ...defaultTheme.fontFamily.sans],
@@ -15,6 +15,6 @@ const config: Config = {
     },
   },
   plugins: [],
-};
+}
 
-export default config;
+export default config
