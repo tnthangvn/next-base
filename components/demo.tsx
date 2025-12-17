@@ -7,7 +7,6 @@ export default function Demo() {
   const [test, setTest] = useState<number>(0)
   useEffect(() => {
     const timeOut = setTimeout(() => {
-      console.log('run')
       setCount((prev) => prev + 1)
     }, 1000)
 
@@ -16,7 +15,6 @@ export default function Demo() {
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
-      console.log('run')
       setTest((prev) => prev + 1)
     }, 3000)
 

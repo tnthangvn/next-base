@@ -2,6 +2,7 @@
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "next": "16.0.10",
+    "next-intl": "^4.6.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-hook-form": "^7.68.0",
@@ -24,7 +25,8 @@
     "prettier-plugin-sort-json": "^4.1.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "unplugin-auto-import": "^20.3.0"
   },
   "engines": {
     "node": ">=22.14.0"

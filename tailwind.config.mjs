@@ -9,7 +9,9 @@ const config = {
     },
     extend: {
       colors: {
-        bluuuu: '#1E40AF',
+        primary: {
+          default: '#1E40AF',
+        },
       },
     },
   },

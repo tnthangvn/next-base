@@ -1,11 +1,11 @@
-import Demo from '~/components/demo'
-import { LoginContainer } from '~/components/login'
+import { FC } from 'react'
 
-export default function Home() {
-  return (
-    <div className="bg-bluuuu font-sans text-3xl">
-      <Demo />
-      <LoginContainer className="size-full" />
-    </div>
-  )
+export interface HomeProps {
+  children?: React.ReactNode
 }
+
+export const Home: FC<HomeProps> = ({ children }) => {
+  return <div>{children}</div>
+}
+
+export default Home

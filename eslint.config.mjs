@@ -37,23 +37,18 @@ const eslintConfig = defineConfig([
       ],
 
       // Base JS rules
-      // 'linebreak-style': [2, 'unix'],
       'no-console': [process.env.NODE_ENV === 'production' ? 1 : 0],
       'no-debugger': [process.env.NODE_ENV === 'production' ? 1 : 0],
       'max-len': [2, { code: 150, ignoreComments: true }],
       'max-lines': ['warn', { max: 300, skipBlankLines: true, skipComments: true }],
-      // 'no-multiple-empty-lines': [2, { max: 1, maxBOF: 0, maxEOF: 0 }],
-      // 'padded-blocks': [2, 'never'],
       quotes: [2, 'single', { avoidEscape: true }],
-      // 'object-curly-spacing': [2, 'always'],
-      // 'array-bracket-spacing': [2, 'never'],
 
       // Unicorn filename case
       'unicorn/filename-case': [
         2,
         {
           case: 'kebabCase',
-          ignore: ['^[a-z][a-z0-9-]*\\.(middleware|global|modules|plugin|config)\\.(ts)$', '^(use|define)[A-Z].*\\.ts$'],
+          ignore: ['^[a-z][a-z0-9-]*\\.(middleware|hooks|global|modules|plugin|config)\\.(ts)$', '^(use|define)[A-Z].*\\.ts$'],
         },
       ],
 
